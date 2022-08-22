@@ -1,8 +1,19 @@
 // selected hero 
 let playerArr = [];
 function playerNameDsiplay(){
-    const playerTableBody = document.getElementById('player-table-body')
-    playerTableBody.innerHTML = "";
+    const playerTableBodyElement = document.getElementById('selected-heros');
+    playerTableBodyElement.innerText = playerArr.length ;
+    const playerTableBody = document.getElementById('player-table-body');
+    playerTableBody.textContent = '';
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+    <td>Player</td>
+    <td>${playerArr.length}</td>`
+
+    playerTableBody.appendChild(tr)
+
+    
     for(let i = 0; i < playerArr.length; i++){
         let playerName = playerArr[i].getplayerName;
 

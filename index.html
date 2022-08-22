@@ -109,10 +109,15 @@
             </div>
             <div class="inline w-1/4 ml-10">
                 <div class="selected-heros bg-stone-900 h-96 w-64	">
-                    <h1 class="text-white text-center pt-5 text-3xl ">Selected Heros </h1>
+                    <h1 id="selected-heros" class="text-white text-center pt-5 text-3xl ">Selected Heros </h1>
                     <div class="overflow-x-auto">
                         <table class="table table-zebra ml-5 mt-5 text-2xl ">
                           <!-- head -->
+                          <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                          </thead>
                           <tbody id="player-table-body">
                             <!-- row 1 -->
                             <!-- <tr>
@@ -127,12 +132,12 @@
                     <h1 class="text-white text-center pt-5 text-3xl">Budget </h1>
                     <div class="player-per flex mt-5 gap-5">
                         <h1 class="text-white ml-3 text-xl">Per Player</h1>
-                        <input class="w-28" type="text">
+                        <input id="per-people-cost" class="w-28" type="text">
                     </div>
-                    <button class="btn px-20 ml-3 py-2 mt-5 text-white bg-blue-500">Calculate</button>
+                    <button id="budget-calculate" class="btn px-20 ml-3 py-2 mt-5 text-white bg-blue-500">Calculate</button>
                     <div class="player-expence flex gap-5 mt-5">
                         <h1 class="text-white text-xl ml-3">Player Expence</h1>
-                        <h1 class="text-white text-xl">$5000</h1>
+                        <h1 class="text-white text-xl">$ <span id="player-expence" >5000</span></h1>
                     </div>
                     <div class="player-per flex mt-5 gap-5">
                         <h1 class="text-white ml-3 text-xl">Manager</h1>
