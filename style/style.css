@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-part{
+    background-image: linear-gradient(rgba(2, 2, 2, 0.61),rgba(19, 17, 17, 0.959)),url(/img/ling-lord-shen-kungfu-panda-skin-wallpaper-hd.jpg);
+    background-size: cover;
+    height: 650px;
+}
+.header-part h1{
+    /* font-family: 'Anek Latin', sans-serif; */
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'DynaPuff', cursive;
+    padding-top: 250px;
+}
+.calculate{
+    height: 450px;
+}
