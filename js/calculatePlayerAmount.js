@@ -10,14 +10,41 @@ document.getElementById('budget-calculate').addEventListener('click', function()
     let playerLenth = parseFloat(playerValueString);
     playerLenth.innerText = perPlayerCost ;
 
-    // calculate per player 
+    // calculate per player cost
     const totalPlayerCost = playerLenth * perPlayerCost ;
 
     // player expence 
     let playerExpence = document.getElementById('player-expence');
     let playerExpenceString = playerExpence.innerText;
     let totalPlayerExpence = parseFloat(playerExpenceString);
-    totalPlayerExpence.innerText = totalPlayerCost;
+    playerExpence.innerText = totalPlayerCost;
+
+    // manager cost 
+    let managerCost = document.getElementById('manager-cost');
+    let managerCostString = managerCost.value;
+    let managerCostValue = parseFloat(managerCostString);
+
+    // coach cost 
+    let coachCost = document.getElementById('coach-cost');
+    let coachCostString = coachCost.value;
+    let coachCostValue = parseFloat(coachCostString);
+
+    // total cost 
+    totalPlayerExpence + managerCostValue + coachCostValue;
+})
+document.getElementById('total-calculate').addEventListener('click', function(){
+    // manager cost 
+    let managerCost = document.getElementById('manager-cost');
+    let managerCostString = managerCost.value;
+    let managerCostValue = parseFloat(managerCostString);
+
+    // coach cost 
+    let coachCost = document.getElementById('coach-cost');
+    let coachCostString = coachCost.value;
+    let coachCostValue = parseFloat(coachCostString);
+
+    // total cost 
+
 })
 
 
