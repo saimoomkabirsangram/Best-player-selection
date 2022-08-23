@@ -43,14 +43,18 @@
 //     let coachCostString = coachCost.value;
 //     let coachCostValue = parseFloat(coachCostString);
 
+//     let playerExpenceValue = document.getElementById('player-expence');
 //     // total cost 
+//     let final = managerCostValue + coachCostValue + playerExpenceValue;
+//     console.log(final);
 
-// })
+})
 
 function getInputValueById(inputId){
     let costValue = document.getElementById(inputId);
     let costValueString = costValue.value ;
     let getFinalCostValue = parseFloat(costValueString);
+    costValue.value = ''
     return getFinalCostValue 
 }
 
@@ -58,10 +62,11 @@ function getTextValueById(textId){
     let costValue = document.getElementById(textId);
     let costValueString = costValue.innerText ;
     let getFinalCostValue = parseFloat(costValueString);
+    costValue.innerText = '';
     return getFinalCostValue 
 }
 
 
 document.getElementById('budget-calculate').addEventListener('click', function(){
     
-}
+})
