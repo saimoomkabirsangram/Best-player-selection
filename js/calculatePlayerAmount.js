@@ -48,7 +48,7 @@
 //     let final = managerCostValue + coachCostValue + playerExpenceValue;
 //     console.log(final);
 
-})
+// })
 
 function getInputValueById(inputId){
     let costValue = document.getElementById(inputId);
@@ -62,11 +62,18 @@ function getTextValueById(textId){
     let costValue = document.getElementById(textId);
     let costValueString = costValue.innerText ;
     let getFinalCostValue = parseFloat(costValueString);
-    costValue.innerText = '';
     return getFinalCostValue 
 }
 
 
 document.getElementById('budget-calculate').addEventListener('click', function(){
+    let playerInputValue = getInputValueById('per-people-cost');
+    let PlayerQtn = getTextValueById('selected-heros');
+    let totalCost = playerInputValue * PlayerQtn;
     
+
+    let playerExpence = document.getElementById('player-expence');
+    let playerExpencestr = parseFloat(playerExpence);
+    playerExpence.innerText = totalCost;
+
 })
