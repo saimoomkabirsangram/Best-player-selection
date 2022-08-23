@@ -38,13 +38,11 @@ document.getElementById('total-calculate').addEventListener('click', function(){
     let playerExpence = document.getElementById('player-expence');
     let playerExpencestr = playerExpence.innerText
     let playerExpenceNumber = parseFloat(playerExpencestr);
-    // playerExpence.innerText = totalCost;
-    console.log(playerExpenceNumber);
 
     playerExpencestr.innerText = totalMangerCoachCost;
 
+    
     let finalCostValue = totalMangerCoachCost + playerExpenceNumber;
-
 
 
     let getTotalValue = document.getElementById('total-cost')
